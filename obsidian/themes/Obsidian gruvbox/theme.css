@@ -1,0 +1,586 @@
+:root {
+    --black1: #000000;
+    --black1RGB: 0, 0, 0;
+    --black2: #282828;
+    --black2RGB: 40, 40, 40;
+    --black3: #32302f;
+    --black3RGB: 50, 48, 47;
+    --black4: #3c3836;
+    --black4RGB: 60, 56, 54;
+    --black5: #504945;
+    --black5RGB: 80, 73, 69;
+    --black6: #665c54;
+    --black6RGB: 102, 92, 84;
+    --black7: #7c6f64;
+    --black7RGB: 124, 111, 100;
+    --black8: #928374;
+    --black8RGB: 146, 131, 116;
+
+    --white1: #eae9c5;
+    --whiteRGB: 234, 233, 197
+    --white2: #fbf1c7;
+    --white2RGB: 251, 241, 199;
+    --white3: #f2e5bc;
+    --white3RGB: 242, 229, 188;
+    --white4: #ebdbb2;
+    --white4RGB: 235, 219, 178;
+    --white5: #d5c4a1;
+    --white5RGB: 213, 196, 161;
+    --white6: #bdae93;
+    --white6RGB: 189, 174, 147;
+    --white7: #a89984;
+    --white7RGB: 168, 153, 132;
+
+    --red: #cc241d;
+    --redRGB: 204, 36, 29;
+    --orange: #d65d0e;
+    --orangeRGB: 214, 93, 14;
+    --yellow: #dfab01;
+    --yellowRGB: 223, 171, 1;
+    --green: #98971a;
+    --greenRGB: 152, 151, 26;
+    --blue: #458588;
+    --blueRGB: 69, 133, 136;
+    --aqua: #8ec07c;
+    --aquaRGB: 104, 157, 106;
+    --purple: #b16286;
+    --purpleRGB: 177, 98, 134;
+
+    --brightRed: #fb4934;
+    --brightRedRGB: 251, 73, 52;
+    --brightOrange: #fe8019;
+    --brightOrangeRGB: 254, 128, 25;
+    --brightYellow: #dfab01;
+    --brightYellowRGB: 223, 171, 1;
+    --brightGreen: #b8bb26;
+    --brightGreenRGB: 184, 187, 38;
+    --brightBlue: #83a598;
+    --brightBlueRGB: 131, 165, 152;
+    --brightAqua: #8ec07c;
+    --brightAquaRGB: 142, 192, 124;
+    --brightPurple: #d3869b;
+    --brightPurpleRGB: 211, 134, 155;
+
+    --fadedRed: #9d0006;
+    --fadedRedRGB: 157, 0, 6;
+    --fadedOrange: #af3a03;
+    --fadedOrangeRGB: 175, 58, 3;
+    --fadedYellow: #dfab01;
+    --fadedYellowRGB: 223, 171, 1;
+    --fadedGreen: #79740e;
+    --fadedGreenRGB: 121, 116, 14;
+    --fadedBlue: #076678;
+    --fadedBlueRGB: 7, 102, 120;
+    --fadedAqua: #427b58;
+    --fadedAquaRGB: 66, 123, 88;
+    --fadedPurple: #8f3f71;
+    --fadedPurpleRGB: 143, 63, 113;
+
+    --dark0-hard_x:     29,32,33; /* #1d2021 */
+    --dark0-hard:       (var(--dark0-hard_x));
+    --dark0_x:          40,40,40; /* #282828 */
+    --dark0:            (var(--dark0_x));
+    --dark0-soft_x:     50,48,47; /* #32302f */
+    --dark0-soft:       (var(--dark0-soft_x));
+    --dark1_x:          60,56,54; /* #3c3836 */
+    --dark1:            (var(--dark1_x));
+    --dark2_x:          80,73,69; /* #504945 */
+    --dark2:            (var(--dark2_x));
+    --dark3_x:          102,92,84; /* #665c54 */
+    --dark3:            (var(--dark3_x));
+    --dark4_x:          124,111,100; /* #7c6f64 */
+    --dark4:            (var(--dark4_x));
+    --gray_x:           146,131,116; /* #928374 */
+    --gray:             (var(--gray_x));
+
+    --light0-hard_x:    249,245,215; /* #f9f5d7 */
+    --light0-hard:      (var(--light0-hard_x));
+    --light0_x:         251,241,199; /* #fbf1c7 */
+    --light0:           (var(--light0_x));
+    --light0-soft_x:    242,229,188; /* #f2e5bc */
+    --light0-soft:      (var(--light0-soft_x));
+    --light1_x:         235,219,178; /* #ebdbb2 */
+    --light1:           (var(--light1_x));
+    --light2_x:         213,196,161; /* #d5c4a1 */
+    --light2:           (var(--light2_x));
+    --light3_x:         189,174,147; /* #bdae93 */
+    --light3:           (var(--light3_x));
+    --light4_x:         168,153,132; /* #a89984 */
+    --light4:           (var(--light4_x));
+
+    --bright-red_x:     251,73,52; /* #fb4934 */
+    --bright-red:       (var(--bright-red_x));
+    --bright-green_x:   184,187,38; /* #b8bb26 */
+    --bright-green:     (var(--bright-green_x));
+    --bright-yellow_x:  250,189,47; /* #fabd2f */
+    --bright-yellow:    (var(--bright-yellow_x));
+    --bright-blue_x:    131,165,152; /* #83a598 */
+    --bright-blue:      (var(--bright-blue_x));
+    --bright-purple_x:  211,134,155; /* #d3869b */
+    --bright-purple:    (var(--bright-purple_x));
+    --bright-aqua_x:    142,192,124; /* #8ec07c */
+    --bright-aqua:      (var(--bright-aqua_x));
+    --bright-orange_x:  254,128,25; /* #fe8019 */
+    --bright-orange:    (var(--bright-orange_x));
+
+    --neutral-red_x:    204,36,29; /* #cc241d */
+    --neutral-red:      (var(--neutral-red_x));
+    --neutral-green_x:  152,151,26; /* #98971a */
+    --neutral-green:    (var(--neutral-green_x));
+    --neutral-yellow_x: 215,153,33; /* #d79921 */
+    --neutral-yellow:   (var(--neutral-yellow_x));
+    --neutral-blue_x:   69,133,136; /* #458588 */
+    --neutral-blue:     (var(--neutral-blue_x));
+    --neutral-purple_x: 177,98,134; /* #b16286 */
+    --neutral-purple:   (var(--neutral-purple_x));
+    --neutral-aqua_x:   104,157,106; /* #689d6a */
+    --neutral-aqua:     (var(--neutral-aqua_x));
+    --neutral-orange_x: 214,93,14; /* #d65d0e */
+    --neutral-orange:   (var(--neutral-orange_x));
+
+    --faded-red_x:      157,0,6; /* #9d0006 */
+    --faded-red:        (var(--faded-red_x));
+    --faded-green_x:    121,116,14; /* #79740e */
+    --faded-green:      (var(--faded-green_x));
+    --faded-yellow_x:   181,118,20; /* #b57614 */
+    --faded-yellow:     (var(--faded-yellow_x));
+    --faded-blue_x:     7,102,120; /* #076678 */
+    --faded-blue:       (var(--faded-blue_x));
+    --faded-purple_x:   143,63,113; /* #8f3f71 */
+    --faded-purple:     (var(--faded-purple_x));
+    --faded-aqua_x:     66,123,88; /* #427b58 */
+    --faded-aqua:       (var(--faded-aqua_x));
+    --faded-orange_x:   175,58,3; /* #af3a03 */
+    --faded-orange:     (var(--faded-orange_x));
+}
+
+body {
+    --accent-h: 46;
+    --accent-s: 99%;
+    --accent-l: 44%;
+
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-external-decoration: none;
+    --link-external-decoration-hover: none !important;
+
+    --tag-decoration: none;
+    --tag-decoration-hover: none !important;
+    --tag-padding-x: 0em;
+    --tag-padding-y: 0em;
+    --tag-radius: 0em;
+
+    --list-indent: 0.75em;
+    --list-marker-color: rgba(var(--white5RGB), 0.5);
+
+    --tab-font-weight: 600;
+    --bold-weight: 600;
+
+    --checkbox-radius: 0;
+
+    --embed-border-left: 6px double var(--interactive-accent);
+
+    --callout-border-width: 0px;
+}
+
+.theme-dark {
+    --color-red: var(--red);
+    --color-red-rgb: var(--redRGB);
+    --color-orange: var(--orange);
+    --color-orange-rgb: var(--orangeRGB);
+    --color-yellow: var(--yellow);
+    --color-yellow-rgb: var(--yellowRGB);
+    --color-green: var(--green);
+    --color-green-rgb: var(--greenRGB);
+    --color-blue: var(--blue);
+    --color-blue-rgb: var(--blueRGB);
+    --color-cyan: var(--aqua);
+    --color-cyan-rgb: var(--aquaRGB);
+    --color-purple: var(--purple);
+    --color-purple-rgb: var(--purpleRGB);
+    --color-pink: var(--brightPurple);
+    --color-pink-rgb: var(--brightPurpleRGB); 
+
+    --background-primary: var(--black1);
+    --background-primary-alt: var(--black1);
+    --background-secondary: var(--black1);
+    --background-secondary-alt: var(--black1);
+    --background-modifier-border: var(--black1);
+
+    --text-normal: var(--white1);
+    --text-faint: var(--white4); 
+    --text-muted: var(--white5);
+    --text-on-accent: var(--black1);
+    --text-on-accent-inverted: var(--white1);
+    --text-error: var(--red);
+    --text-warning: var(--orange);
+    --text-success: var(--green);
+    --text-accent: var(--interactive-accent);
+
+    --link-url: var(--green);
+
+    --h1-color: var(--interactive-accent);
+    --h2-color: var(--interactive-accent);
+    --h3-color: var(--interactive-accent);
+    --h4-color: var(--interactive-accent);
+    --h5-color: var(--interactive-accent);
+    --h6-color: var(--interactive-accent);
+
+    --h2-weight: 700;
+    --h3-weight: 700;
+    --h4-weight: 700;
+    --h5-weight: 700;
+    --h6-weight: 700;
+
+    --h5-variant: small-caps;
+    --h6-variant: small-caps;
+
+    --text-highlight-bg: var(--interactive-accent);
+    --text-highlight-fg: var(--black1);
+
+    --tag-color: var(--interactive-accent);
+    --tag-background: var(--black1);
+
+    --titlebar-text-color-focused: var(--white5);
+
+    --inline-title-color: var(--interactive-accent);
+
+    --bold-color: var(--interactive-accent);
+    --italic-color: var(--interactive-accent);
+
+    --checkbox-color: var(--white7);
+    --checkbox-border-color: var(--white7);
+
+    --checklist-done-color: rgba(var(--white5RGB), 0.5);
+
+    --table-border-color: var(--interactive-accent);
+    --table-header-background: transparent;
+    --table-header-background-hover: transparent;
+    --table-row-even-background: transparent;
+    --table-row-odd-background: transparent;
+    --table-row-background-hover: transparent;
+    --table-add-button-border-color: none;
+    --table-selection-border-width: 1px;
+    --table-selection-border-radius: 0px;
+
+    --text-selection: var(--black5);
+    --flashing-background: hsla(var(--color-accent-hsl), 0.3);
+
+    --code-normal: var(--bright-blue);
+    --code-background: var(--black1);
+
+    --icon-color-hover: var(--interactive-accent);
+    --icon-color-focused: var(--interactive-accent);
+
+    --nav-item-color-hover: var(--interactive-accent);
+    --nav-item-color-active: var(--interactive-accent);
+    --nav-file-tag: hsla(var(--color-accent-hsl), 0.9);
+
+    --callout-bug: var(--redRGB);
+    --callout-default: var(--blueRGB);
+    --callout-error: var(--redRGB);
+    --callout-example: var(--purpleRGB);
+    --callout-fail: var(--redRGB);
+    --callout-important: var(--aquaRGB);
+    --callout-info: var(--blueRGB);
+    --callout-question: var(--yellowRGB);
+    --callout-success: var(--greenRGB);
+    --callout-summary: var(--aquaRGB);
+    --callout-tip: var(--aquaRGB);
+    --callout-todo: var(--blueRGB);
+    --callout-warning: var(--orangeRGB);
+    --callout-quote: var(--black8RGB);
+    --callout-note: var(--blueRGB);
+
+    --caret-color: var(--interactive-accent);
+
+    --calendar-hover:                var(--bright-red);
+    --calendar-background-hover:     var(--dark1);
+    --calendar-week:                 var(--neutral-orange);
+    --calendar-today:                var(--neutral-orange);
+}
+
+.theme-light
+{
+    --color-red-rgb:                 var(--neutral-red_x);
+    --color-red:                     var(--neutral-red);
+    --color-purple-rgb:              var(--neutral-purple_x);
+    --color-purple:                  var(--neutral-purple);
+    --color-green-rgb:               var(--neutral-green_x);
+    --color-green:                   var(--neutral-green);
+    --color-cyan-rgb:                var(--neutral-blue_x);
+    --color-cyan:                    var(--neutral-blue);
+    --color-blue-rgb:                var(--faded-blue_x);
+    --color-blue:                    var(--faded-blue);
+    --color-yellow-rgb:              var(--neutral-yellow_x);
+    --color-yellow:                  var(--neutral-yellow);
+    --color-orange-rgb:              var(--neutral-orange_x);
+    --color-orange:                  var(--neutral-orange);
+    --color-pink-rgb:                var(--bright-purple_x);
+    --color-pink:                    var(--bright-purple);
+
+    --background-primary:            var(--light0-hard);
+    --background-primary-alt:        var(--light0-hard);
+    --background-secondary:          var(--light1);
+    --background-secondary-alt:      var(--light1);
+    --background-modifier-border:    var(--light2);
+
+    --cursor-line-background:        rgba(var(--light1_x), 0.5);
+
+    --text-normal:                   var(--dark0);
+    --text-faint:                    var(--dark3);
+    --text-muted:                    var(--dark2);
+
+    --link-url:                      var(--neutral-green);
+
+    --h1-color:                      var(--neutral-red);
+    --h2-color:                      var(--neutral-yellow);
+    --h3-color:                      var(--neutral-green);
+    --h4-color:                      var(--neutral-aqua);
+    --h5-color:                      var(--neutral-blue);
+    --h6-color:                      var(--neutral-purple);
+
+    --text-highlight-bg:             var(--bright-yellow);
+    --text-highlight-fg:             var(--dark0);
+
+    --text-accent:                   var(--neutral-orange);
+    --text-accent-hover:             var(--bright-aqua);
+
+    --tag-color:                     var(--neutral-aqua);
+    --tag-background:                var(--light1);
+    --tag-background-hover:          rgba(var(--light1_x), 0.6);
+
+    --titlebar-text-color-focused:   var(--bright-red);
+
+    --inline-title-color:            var(--bright-yellow);
+
+    --bold-color:                    var(--neutral-yellow);
+    --italic-color:                  var(--neutral-yellow);
+
+    --checkbox-color:                var(--light4);
+    --checkbox-color-hover:          var(--light4);
+    --checkbox-border-color:         var(--light4);
+    --checkbox-border-color-hover:   var(--light4);
+    --checklist-done-color:          rgba(var(--dark2_x), 0.4);
+
+    --table-header-background:       rgba(var(--light3_x), 0.4);
+    --table-header-background-hover: var(--light2);
+    --table-row-even-background:     rgba(var(--light1_x), 0.2);
+    --table-row-odd-background:      rgba(var(--light1_x), 0.7);
+    --table-row-background-hover:    var(--light2);
+
+    --text-selection:                rgba(var(--neutral-red_x), 0.6);
+    --flashing-background:           rgba(var(--neutral-red_x), 0.3);
+
+    --code-normal:                   var(--bright-blue);
+    --code-background:               var(--light1);
+
+    --icon-color-hover:              var(--bright-red);
+    --icon-color-focused:            var(--bright-blue);
+
+    --nav-item-color-hover:          var(--bright-red);
+    --nav-item-color-active:         var(--neutral-blue);
+    --nav-file-tag:                  rgba(var(--neutral-blue_x), 0.9);
+
+    --graph-line:                    var(--light1);
+    --graph-node:                    var(--gray);
+    --graph-node-tag:                var(--neutral-red);
+    --graph-node-attachment:         var(--bright-green);
+
+    --calendar-hover:                var(--bright-red);
+    --calendar-background-hover:     var(--light1);
+    --calendar-week:                 var(--bright-red);
+    --calendar-today:                var(--bright-red);
+}
+
+table {
+    border-color: none !important;
+    border-collapse: collapse !important;
+}
+
+th {
+    font-weight: 600 !important;
+    border-bottom: 1px solid var(--black6) !important;
+    border-right: 1px solid var(--black6) !important;
+}
+
+th:last-child {
+    border-right: none !important;
+}
+
+td {
+    border: 1px solid var(--black6) !important;
+}
+
+tr:first-child td {
+    border-top: none !important;
+}
+
+tr:last-child td {
+    border-bottom: none !important;
+}
+ 
+tr td:first-child {
+    border-left: none !important;
+}
+
+tr td:last-child {
+    border-right: none !important;
+}
+
+.cm-html-embed td, .markdown-rendered td, .cm-html-embed th, .markdown-rendered th {
+    border: none;
+}
+
+.markdown-rendered mark
+{
+    background-color: var(--text-highlight-bg);
+    color: var(--text-highlight-fg);
+}
+
+.markdown-rendered mark a
+{
+    color: var(--red) !important;
+    font-weight: 600;
+}
+
+.search-result-file-matched-text
+{
+    color: var(--text-highlight-fg) !important;
+}
+
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    color: var(--text-accent);
+    text-decoration: none !important;
+}
+
+input[type=checkbox]
+{
+    border: 1px solid var(--checkbox-color);
+}
+
+input[type=checkbox]:checked
+{
+    background-color: var(--checkbox-color);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+input[type=checkbox]:checked:after
+{
+    display: none;
+}
+
+code[class*="language-"],
+pre[class*="language-"]
+{
+    line-height: var(--line-height-tight) !important;
+}
+
+/* Keep highlight/marks the same between viewer and editor. */
+.cm-highlight
+{
+    color: var(--text-highlight-fg) !important;
+}
+
+/* Keep inline code the same between viewer and editor. */
+.cm-inline-code
+{
+    border-radius: var(--radius-s);
+    font-size: var(--code-size);
+    padding: 0.1em 0.25em;
+}
+
+.cm-line .cm-strong
+{
+    color: var(--bold-color) !important;
+}
+
+/*
+ * Keep list bullet padding the same between viewer and editor.
+ * This is annoying with the cursor in the editor as there is a gap.
+ */
+/*
+.cm-formatting-list
+{
+    padding-right: 4px !important;
+}
+*/
+
+/*
+ * Keep sub-list indenting the same between viewer and editor.
+ * This assumes --list-indent is default at 2em.
+ */
+/*
+.cm-indent 
+{
+    text-indent: 1em !important;
+}
+*/
+
+.calendar .week-num
+{
+    color: var(--calendar-week) !important;
+}
+
+.calendar .today
+{
+    color: var(--calendar-today) !important;
+}
+
+.calendar .week-num:hover,
+.calendar .day:hover
+{
+    color: var(--calendar-hover) !important;
+    background-color: var(--calendar-background-hover) !important;
+}
+
+.markdown-embed-title
+{
+    color: var(--yellow);
+    font-weight: 600 !important;
+}
+
+.cm-active
+{
+    background-color: var(--cursor-line-background) !important;
+}
+
+.nav-file-tag
+{
+    color: var(--nav-file-tag) !important;
+}
+
+.is-flashing
+{
+    background-color: var(--flashing-background) !important;
+}
+
+.callout {
+    background-color: rgba(var(--callout-color), 0.2);
+    border: none;
+}
+
+hr {
+    border-color: var(--black6);
+}
+
+.cm-strikethrough {
+	color: rgba(var(--white5RGB), 0.5);
+}
+
+.list-number {
+	color: rgba(var(--white5RGB), 0.5);
+}
+
+.list-bullet {
+	color: rgba(var(--white5RGB), 0.5);
+}
+
+kbd {
+    color: var(--interactive-accent);
+}
+
+.canvas-control-item {
+    background-color: var(--black1);
+  }

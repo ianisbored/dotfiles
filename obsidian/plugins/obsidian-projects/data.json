@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "field": "name",
+                "operator": "is-not-empty",
+                "enabled": true
+              }
+            ]
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#a882ff",
+                "condition": {
+                  "field": "excalidraw-plugin",
+                  "operator": "is-not-empty",
+                  "enabled": true
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "594c89b1-0067-43c5-9727-7b3d7048fb7a",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "75f4f2b2-9aba-4ef3-8012-afc3b8f10251",
+      "name": "test"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "default"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}
