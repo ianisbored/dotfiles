@@ -1,7 +1,6 @@
 #!/bin/bash
 green=$'\e[0;32m'
 cyan=$'\e[0;36m'
-red=$'\e[0;31m'
 reset=$'\e[0m'
 default="y"
 datetime="$(date +"%m-%d-%Y @ %I:%M %p")"
@@ -15,10 +14,10 @@ branchName () {
   read -p "${green}?${reset} What's your branch name? ${cyan}[defaults to main]${reset} " branch
     if [[ -z $branch ]]; then
       git push origin $defBranch > /dev/null 2>&1
-      echo "${red}!${reset} Your local files are now pushed to $defBranch!"
+      echo "${green}!${reset} Your local files are now pushed to $defBranch!"
     else 
       git push origin $branch > /dev/null 2>&1
-      echo "${red}!${reset} Your local files are now pushed to $branch!"
+      echo "${green}!${reset} Your local files are now pushed to $branch!"
     fi
 }
 
