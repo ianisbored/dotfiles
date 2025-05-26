@@ -23,8 +23,10 @@ commitMesg () {
   read -p "What's your commit message? " commit
     if [[ -z $commit ]]; then
       git commit -m "commit on $datetime"
+      branchName
     else
       git commit -m "$commit"
+      branchName
     fi
 }
 
