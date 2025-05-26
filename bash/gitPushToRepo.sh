@@ -11,8 +11,10 @@ branchName () {
   read -p "What's your branch name? [defaults to main]" branch
     if [[ -z $branch ]]; then
       git push origin $defBranch
+      echo "Your local files are now pushed to $defBranch!"
     else 
       git push origin $branch
+      echo "Your local files are now pushed to $branch!"
     fi
 }
 
