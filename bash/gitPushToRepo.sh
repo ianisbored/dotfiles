@@ -1,4 +1,5 @@
 #!/bin/bash
+#created by ianisbored on May 26, 2025 @ 7:15PM, PST
 green=$'\e[0;32m'
 cyan=$'\e[0;36m'
 reset=$'\e[0m'
