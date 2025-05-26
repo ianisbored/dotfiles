@@ -6,7 +6,7 @@ read -p "Is this the correct folder? [Y/n] " conf
 
 conf=${conf:-$default}
 
-# branchName
+# branch name
 branchName () {
   read -p "What's your branch name? [defaults to main]" branch
     if [[ -z $branch ]]; then
@@ -34,11 +34,11 @@ commitMesg () {
 addFiles () {
   read -p "Input files to stage: "
     if [[ "$conf" =~ ^[Yy]$ ]]; then
-      git add . > /dev/null 2>&1
+      git add .
       commitMesg
     else 
       read -p "Input all files needed: " files
-      git add $files > /dev/null 2>&1
+      git add $files
       commitMesg
     fi
 }
@@ -58,4 +58,3 @@ if [[ "$conf" =~ ^[Yy]$ ]]; then
 else
   exit
 fi
-
