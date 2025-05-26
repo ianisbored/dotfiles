@@ -10,10 +10,10 @@ conf=${conf:-$default}
 branchName () {
   read -p "What's your branch name? [defaults to main]" branch
     if [[ -z $branch ]]; then
-      git push origin $defBranch
+      git push origin $defBranch > /dev/null 2>&1
       echo "Your local files are now pushed to $defBranch!"
     else 
-      git push origin $branch
+      git push origin $branch > /dev/null 2>&1
       echo "Your local files are now pushed to $branch!"
     fi
 }
