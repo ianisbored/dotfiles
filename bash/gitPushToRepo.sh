@@ -1,7 +1,4 @@
 #!/bin/bash
-
-exec > /dev/null 2>&1
-
 default="y"
 datetime="$(date +"%m-%d-%Y @ %I:%M %p")"
 defBranch="main"
@@ -25,10 +22,10 @@ branchName () {
 commitMesg () {
   read -p "What's your commit message? " commit
     if [[ -z $commit ]]; then
-      git commit -m "commit on $datetime"
+      git commit -m "commit on $datetime" > /dev/null 2>&1
       branchName
     else
-      git commit -m "$commit"
+      git commit -m "$commit" > /dev/null 2>&1
       branchName
     fi
 }
@@ -37,11 +34,11 @@ commitMesg () {
 addFiles () {
   read -p "Input files to stage: "
     if [[ "$conf" =~ ^[Yy]$ ]]; then
-      git add .
+      git add . > /dev/null 2>&1
       commitMesg
     else 
       read -p "Input all files needed: " files
-      git add $files
+      git add $files > /dev/null 2>&1
       commitMesg
     fi
 }
