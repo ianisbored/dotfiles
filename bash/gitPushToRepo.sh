@@ -8,10 +8,10 @@ conf=${conf:-$default}
 # commit message 
 commitMesg () {
   read -p "What's your commit message? " commit
-    if [[ "$commit" =~ ^[]$ ]]; then
-      git commit -m $datetime
+    if [[ -z $commit ]]; then
+      git commit -m "commit on $datetime"
     else
-      git commit -m $commit
+      git commit -m "$commit"
     fi
 }
 
