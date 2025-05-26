@@ -2,6 +2,8 @@
 
 My config files for hyprland and other utilities with some shell scripts. **Heavily customised for my workflow and only meant to be a reference**
 
+
+
 ## Screenshots
 ![[4.png]]
 ![[hyprland/screenshots/1.png]]
@@ -13,24 +15,18 @@ My config files for hyprland and other utilities with some shell scripts. **Heav
 ### Official Repo
 Needed
 ```
-ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpicker hyprpaper neovim hyprpolkitagent nwg-look noto-fonts noto-fonts-emoji noto-fonts-extra scrcpy nemo rofi-wayland copyq flatpak fastfetch imagemagick
+ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpicker hyprpaper neovim hyprpolkitagent nwg-look scrcpy nemo rofi-wayland copyq flatpak fastfetch imagemagick
 ```
 
 My preferred extras
 ```
-vlc loupe gnome-boxes nemo-fileroller
+vlc loupe gnome-boxes nemo-fileroller apple-fonts ttf-apple-emoji gnome-characters
 ```
 
 ### AUR
 ```
 gruvbox-dark-icons-gtk gruvbox-material-gtk-theme-git hyprshot zen-browser-bin
 ```
-
-### Flatpak
-```
-it.mijorus.smile
-```
-
 ## Installation
 
 - Clone this repo at `.config/` in your home directory
