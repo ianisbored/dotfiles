@@ -1,9 +1,20 @@
 #!/bin/bash
 default="y"
 datetime="$(date +"%m-%d-%Y @ %I:%M %p")"
+defBranch="main"
 read -p "Is this the correct folder? [Y/n] " conf
 
 conf=${conf:-$default}
+
+# branchName
+branchName () {
+  read -p "What's your branch name? [defaults to main]" branch
+    if [[ -z $branch ]]; then
+      git push origin $defBranch
+    else 
+      git push origin $branch
+    fi
+}
 
 # commit message 
 commitMesg () {
@@ -20,7 +31,6 @@ addFiles () {
   read -p "Input files to stage: "
     if [[ "$conf" =~ ^[Yy]$ ]]; then
       git add .
-      echo "Added all files for staging."
       commitMesg
     else 
       read -p "Input all files needed: " files
