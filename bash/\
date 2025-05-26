@@ -1,0 +1,32 @@
+#!/bin/bash
+default="y"
+read -p "Is this the correct folder? [Y/n] " conf
+
+conf=${conf:-$default}
+
+folderConfirmation () {
+  if [[ "$conf" =~ ^[Yy]$ ]]; then
+    git add .
+    echo "Staged all files for a commit."
+  else
+    exit
+  fi
+}
+
+addFiles () {
+  if [["$conf" =~ ^[Yy]$ ]]; then
+    git add .
+    echo "Added all files for staging."
+  else 
+    read -p "Input all files needed: " files
+    git add $files
+  fi
+}
+
+
+if [[ "$conf" =~ ^[Yy]$ ]]; then
+  folderConfirmation
+else
+  exit
+fi
+
