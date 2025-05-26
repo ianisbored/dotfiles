@@ -1,8 +1,10 @@
 #!/bin/bash
+green='\033[0;32m'
+reset='\033[0m'
 default="y"
 datetime="$(date +"%m-%d-%Y @ %I:%M %p")"
 defBranch="main"
-read -p "Is this the correct folder? [Y/n] " conf
+read -p $'\e[0;32m?\e[0m Is this the correct folder? [Y/n] ' conf
 
 conf=${conf:-$default}
 
