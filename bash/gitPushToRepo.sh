@@ -1,17 +1,17 @@
 #!/bin/bash
-green='\033[0;32m'
-olive='\033[0;36m'
-reset='\033[0m'
+green=$'\e[0;32m'
+cyan=$'\e[0;36m'
+reset=$'\e[0m'
 default="y"
 datetime="$(date +"%m-%d-%Y @ %I:%M %p")"
 defBranch="main"
-read -p $'\e[0;32m?\e[0m Is this the correct folder? \e[0;36m[Y/n]\e[0m ' conf
+read -p "${green}?${reset} Is this the correct folder? ${cyan}[Y/n]${reset} " conf
 
 conf=${conf:-$default}
 
 # branch name
 branchName () {
-  read -p "What's your branch name? [defaults to main]" branch
+  read -p "${green}?${reset} What's your branch name? ${cyan}[defaults to main]${reset} " branch
     if [[ -z $branch ]]; then
       git push origin $defBranch > /dev/null 2>&1
       echo "Your local files are now pushed to $defBranch!"
@@ -23,7 +23,7 @@ branchName () {
 
 # commit message 
 commitMesg () {
-  read -p "What's your commit message? " commit
+  read -p "${green}?${reset} What's your commit message? ${cyan}[defaults to current date and time]${reset} " commit
     if [[ -z $commit ]]; then
       git commit -m "commit on $datetime" > /dev/null 2>&1
       branchName
@@ -35,7 +35,7 @@ commitMesg () {
 
 # add files for staging
 addFiles () {
-  read -p "Input files to stage: "
+  read -p "${green}?${reset} What files are you staging? ${cyan}[defaults to all]${reset} "
     if [[ "$conf" =~ ^[Yy]$ ]]; then
       git add .
       commitMesg
