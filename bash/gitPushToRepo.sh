@@ -1,4 +1,7 @@
 #!/bin/bash
+
+exec > /dev/null 2>&1
+
 default="y"
 datetime="$(date +"%m-%d-%Y @ %I:%M %p")"
 defBranch="main"
