@@ -5,10 +5,6 @@ My config files for hyprland and other utilities with some shell scripts. **Heav
 
 
 ## Screenshots
-![[4.png]]
-![[hyprland/screenshots/1.png]]
-![[2.png]]
-![[3.png]]
 
 ## Packages
 
