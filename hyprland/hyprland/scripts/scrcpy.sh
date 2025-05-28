@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-#Script to run SCRCPY
-
+# copied blatantly from shub39
 if pgrep -x "scrcpy" > /dev/null
 then
     pkill -x scrcpy
