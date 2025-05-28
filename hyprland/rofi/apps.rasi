@@ -13,5 +13,4 @@ configuration {
     dpi: 110;
 }
 
-
 @theme "~/.config/dotfiles/hyprland/rofi/gruvbox-material.rasi"

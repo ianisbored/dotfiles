@@ -25,11 +25,11 @@
   yellowdark: #b47109;
 
   foreground: @gruv9;
-  background-color: transparent;
+  background-color: black;
 
   highlight: underline bold #eee0b7;
 
-  transparent: rgba(0, 0, 0, 0.1);
+  transparent: rgba(0, 0, 0, 0.6);
 }
 
 window {
