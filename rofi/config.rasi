@@ -1,3 +1,5 @@
+// default config
+
 configuration {
     show-icons: false;
     font: "JetBrainsMono 12";
@@ -12,5 +14,6 @@ configuration {
 
     dpi: 110;
 }
+
 
 @theme "~/.config/dotfiles/hyprland/rofi/gruvbox-material.rasi"
