@@ -1,99 +1,63 @@
-// gruvbox theme
-
 * {
-  gruv0: #282828;
-  gruv1: #32302f;
-  gruv2: #45403d;
-  gruv3: #5a524c;
+  black: #000000;
+  white: #eae9c5;
 
-  gruv4: #fbf1c7;
-  gruv5: #f4e8be;
-  gruv6: #eee0b7;
-
-  gruv7: #a89984;
-  gruv8: #928374;
-  gruv9: #7c6f64;
-  gruv10: #504945;
-  red: #ea6962;
-
-  orange: #e78a4e;
-  yellow: #d8a657;
-  aqua: #89b482;
+  red: #cc241d;
+  orange: #d65d0e;
+  yellow: #dfab01;
+  green: #98971a;
+  blue: #458588;
+  cyan: #89b482;
   purple: #d3869b;
 
-  reddark: #c14a4a;
-  yellowdark: #b47109;
+  foreground: @black;
+  background-color: @transparent;
 
-  foreground: @gruv9;
-  background-color: transparent;
+  highlight: bold #dfab01;
 
-  highlight: underline bold #eee0b7;
-
-  transparent: rgba(0, 0, 0, 0.1);
+  transparent: rgba(0, 0, 0, 0.3);
 }
 
 window {
   location: center;
   anchor: center;
-  border-radius: 0px; /* Removed rounded corners */
-  height: 560px;
-  width: 600px;
-
-  background-color: @transparent;
-  spacing: 0;
-  children: [mainbox];
-  orientation: horizontal;
-}
-
-mainbox {
-  spacing: 0;
-  children: [inputbar, message, listview];
+  border-radius: 0px;
+  height: 300px;
+  width: 500px;
+  background-color: @black;
 }
 
 message {
   padding: 10px;
-  border: 0px 2px 2px 2px;
-  border-color: @gruv0;
-  background-color: @transparent;
+  text-color: @red;
 }
 
 inputbar {
-  color: @gruv6;
-  padding: 14px;
-  background-color: @transparent;
-  border-color: @gruv6;
-
-  border: 4px;
-  border-radius: 0px; /* Removed rounded corners */
+  color: @white;
+  padding: 22px;
+  border-radius: 0px;
 }
 
-entry,
-prompt,
-case-indicator {
+entry,prompt {
   text-font: inherit;
   text-color: inherit;
 }
 
 prompt {
-  margin: 0px 1em 0em 0em;
+  margin: 0px 0.5em 0em 0em;
 }
 
 listview {
-  padding: 8px;
-  border-radius: 0px; /* Removed rounded corners */
-  border: 0px 4px 4px 4px;
-  border-color: @gruv6;
-  background-color: @transparent;
-  dynamic: false;
+  padding: 12px 12px 12px 12px;
+  border-radius: 0px;
 }
 
 element {
-  padding: 5px;
+  padding: 10px;
   vertical-align: 0.5;
-  border-radius: 0px; /* Removed rounded corners */
+  border-radius: 0px;
   color: @foreground;
-  text-color: @gruv6;
-  background-color: @transparent;
+  text-color: @white;
 }
 
 element.normal.active {
@@ -101,16 +65,17 @@ element.normal.active {
 }
 
 element.normal.urgent {
-  background-color: @reddark;
+  text-color: @black;
+  background-color: @red;
 }
 
 element.selected.normal {
-  background-color: @gruv7;
-  text-color: @gruv0;
+  background-color: @yellow;
+  text-color: @black;
 }
 
 element.selected.active {
-  background-color: @yellowdark;
+  background-color: @yellow;
 }
 
 element.selected.urgent {
@@ -121,26 +86,34 @@ element.alternate.normal {
   background-color: @transparent;
 }
 
-element-text,
-element-icon {
+/*all icon and text entry*/
+element-text,element-icon {
   size: 3ch;
   margin: 0 10 0 0;
   vertical-align: 0.5;
-  text-color: @gruv6;
+  text-color: @white;
+}
+
+/*selected entry*/
+element-text.selected,element-icon.selected {
+  background-color: @yellow;
+  text-color: @black;
+  highlight: bold #eae9c5;
 }
 
 button {
-  padding: 6px;
-  color: @foreground;
+  padding: 8px 6px 8px 8px;
   horizontal-align: 0.5;
-
-  border: 2px 0px 2px 2px;
-  border-radius: 0px; /* Removed rounded corners */
-  border-color: @foreground;
+  border-radius: 0px;
 }
 
-button.selected.normal {
-  border: 2px 0px 2px 2px;
-  border-color: @foreground;
+scroll {
+  padding: 10px 15px 10px 15px;
+  border-radius: 12px;
+}
+
+inner-box {
+  padding: 0;
+  border-radius: 0;
 }
 

@@ -1,5 +1,3 @@
-// config for rofi, the menu for apps, lofi and scrcpy
-
 configuration {
     show-icons: true;
     font: "JetBrainsMono 12";
@@ -15,5 +13,5 @@ configuration {
     dpi: 110;
 }
 
+@theme "~/.config/dotfiles/rofi/gruvbox-material.rasi"
 
-@theme "~/.config/dotfiles/hyprland/rofi/gruvbox-material.rasi"
