@@ -10,14 +10,15 @@
   cyan: #89b482;
   purple: #d3869b;
 
-  foreground: @black;
-  background-color: @transparent;
+  foreground: @white;
+  background-color: @black;
 
   highlight: bold #dfab01;
 
   transparent: rgba(0, 0, 0, 0.3);
 }
 
+/* entire window style */
 window {
   location: center;
   anchor: center;
@@ -27,93 +28,60 @@ window {
   background-color: @black;
 }
 
-message {
-  padding: 10px;
-  text-color: @red;
-}
-
+/* top part */
 inputbar {
   color: @white;
   padding: 22px;
   border-radius: 0px;
+  children: [ prompt, entry ];
 }
 
+/* inputted text, text before the entry */
 entry,prompt {
-  text-font: inherit;
+  font: "JetBrainsMono 12";
   text-color: inherit;
+  font-weight: 900;
 }
 
 prompt {
   margin: 0px 0.5em 0em 0em;
 }
 
+/* selects the entries not selected */
 listview {
-  padding: 12px 12px 12px 12px;
+  padding: 12px;
   border-radius: 0px;
 }
 
+/* text that's not selected */
 element {
   padding: 10px;
   vertical-align: 0.5;
   border-radius: 0px;
-  color: @foreground;
   text-color: @white;
-}
-
-element.normal.active {
-  background-color: @yellow;
-}
-
-element.normal.urgent {
-  text-color: @black;
-  background-color: @red;
-}
-
-element.selected.normal {
-  background-color: @yellow;
-  text-color: @black;
-}
-
-element.selected.active {
-  background-color: @yellow;
-}
-
-element.selected.urgent {
-  background-color: @red;
-}
-
-element.alternate.normal {
-  background-color: @transparent;
 }
 
 /*all icon and text entry*/
 element-text,element-icon {
-  size: 3ch;
+  size: 4.25ch;
   margin: 0 10 0 0;
   vertical-align: 0.5;
   text-color: @white;
 }
 
 /*selected entry*/
-element-text.selected,element-icon.selected {
+element.selected.normal,element-text.selected,element-icon.selected {
   background-color: @yellow;
   text-color: @black;
   highlight: bold #eae9c5;
 }
 
+/*
 button {
-  padding: 8px 6px 8px 8px;
-  horizontal-align: 0.5;
-  border-radius: 0px;
+
 }
 
-scroll {
-  padding: 10px 15px 10px 15px;
-  border-radius: 12px;
-}
+button.selected {
 
-inner-box {
-  padding: 0;
-  border-radius: 0;
 }
-
+*/
