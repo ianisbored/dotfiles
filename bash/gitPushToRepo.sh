@@ -14,10 +14,10 @@ conf=${conf:-$default}
 branchName () {
   read -p "${green}?${reset} What's your branch name? ${cyan}[defaults to main]${reset} " branch
     if [[ -z $branch ]]; then
-      git push origin $defBranch > /dev/null 2>&1
+      git push origin $defBranch 
       echo "${green}!${reset} Your local files are now pushed to $defBranch!"
     else 
-      git push origin $branch > /dev/null 2>&1
+      git push origin $branch 
       echo "${green}!${reset} Your local files are now pushed to $branch!"
     fi
 }
@@ -26,10 +26,10 @@ branchName () {
 commitMesg () {
   read -p "${green}?${reset} What's your commit message? ${cyan}[defaults to current date and time]${reset} " commit
     if [[ -z $commit ]]; then
-      git commit -m "commit on $datetime" > /dev/null 2>&1
+      git commit -m "commit on $datetime" 
       branchName
     else
-      git commit -m "$commit" > /dev/null 2>&1
+      git commit -m "$commit" 
       branchName
     fi
 }
